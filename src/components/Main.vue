@@ -1,6 +1,9 @@
 <template>
   <main>
+      <div class="container">
+
       <div class="content">--> Content goes here</div>
+      </div>
   </main>
 </template>
 
@@ -12,12 +15,12 @@ export default {
 
 <style scoped lang="scss">
 main{
-    height: 200px;
+    height: 150px;
     background-color: black;
     .content{
         color: white;
-        font-size: 40px;
-        line-height: 200px;
+        font-size: 20px;
+        line-height: 150px;
     }
 }
 </style>
