@@ -3,11 +3,11 @@
         <div class="footer-top">
             <div class="container">
                 <ul>
-                    <li><a href=""><img src="../assets/img/buy-comics-digital-comics.png" alt="buy comics icon"></a><span>digital comics</span></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-merchandise.png" alt="buy merchandise icon"></a><span>digital comics</span></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-subscriptions.png" alt="buy subscriptions icon"></a><span>digital comics</span></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-shop-locator.png" alt="shop-locator icon"></a><span>digital comics</span></li>
-                    <li><a href=""><img src="../assets/img/buy-dc-power-visa.svg" alt="power-visa icon"></a><span>digital comics</span></li>
+                    <li><a href=""><img src="../assets/img/buy-comics-digital-comics.png" alt="buy comics icon"><span>digital comics</span></a></li>
+                    <li><a href=""><img src="../assets/img/buy-comics-merchandise.png" alt="buy merchandise icon"><span>digital comics</span></a></li>
+                    <li><a href=""><img src="../assets/img/buy-comics-subscriptions.png" alt="buy subscriptions icon"><span>digital comics</span></a></li>
+                    <li><a href=""><img src="../assets/img/buy-comics-shop-locator.png" alt="shop-locator icon"><span>digital comics</span></a></li>
+                    <li><a href=""><img src="../assets/img/buy-dc-power-visa.svg" alt="power-visa icon"><span>digital comics</span></a></li>
                 </ul>
             </div>
         </div>
@@ -64,10 +64,10 @@
                     <div class="links-icons">
                         <span>follow us</span>
                         <ul>
-                            <li><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
-                            <li><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                            <li><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
-                            <li><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/dc/"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                            <li><a href="https://twitter.com/dccomics"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                            <li><a href="https://www.pinterest.co.uk/dccomics/"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
                             <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
                         </ul>
                     </div>
@@ -110,10 +110,13 @@ export default {
                   display: flex;
                   align-items: center;
                   padding: 10px 15px;
-                  a{
                       &:hover{
                           transform: scale(1.1);
+                          transition: 0.2s;
                       }
+                  a{
+                      display: flex;
+                      align-items: center;
                       img{
                           width: 40px;
                           margin: 0px 5px;

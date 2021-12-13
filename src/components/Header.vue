@@ -27,6 +27,7 @@ name:"Header"
 </script>
 
 <style scoped lang="scss">
+@import "../assets/styles/presets.scss";
     header{
         height: 100px;
 
@@ -52,6 +53,8 @@ name:"Header"
              display: flex;
              height: 100%;
              align-items: center;
+                
+                     }
              li{
                  display: flex;
                  align-items: center;
@@ -61,16 +64,22 @@ name:"Header"
                  text-transform: uppercase;
 
                  &:hover {
-                     border-bottom: 5px solid blue;
+                     border-bottom: 5px solid $main-color ;
                      transition: 0.2s;
 
                  }
 
                  a{
+                     display: flex;
+                     align-items: center;
+                     height: 100%;
                      text-decoration: none;
                      color: black;
                      font-weight: 600;
-                 }
+                     &:hover{
+                        color:$main-color;
+                        transition: 0.2s;
+                        }
                
              }
          }
