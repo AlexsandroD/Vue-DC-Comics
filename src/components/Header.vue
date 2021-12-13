@@ -62,8 +62,10 @@ name:"Header"
 
                  &:hover {
                      border-bottom: 5px solid blue;
+                     transition: 0.2s;
+
                  }
-                 
+
                  a{
                      text-decoration: none;
                      color: black;
