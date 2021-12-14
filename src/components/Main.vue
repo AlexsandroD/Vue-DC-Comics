@@ -116,7 +116,6 @@ main{
         margin: 40px auto;
         .card{
             width:15%; 
-            border: black 1px solid;
             .title{
                 color: white;
                 padding:5px 0;
@@ -128,6 +127,9 @@ main{
                 object-position: 0px 10px; 
             }
 
+            &:hover{
+             transform: scale(1.2);
+                }
          
         }
           .btn{

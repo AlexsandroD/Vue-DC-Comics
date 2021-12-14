@@ -3,11 +3,8 @@
         <div class="footer-top">
             <div class="container">
                 <ul>
-                    <li><a href=""><img src="../assets/img/buy-comics-digital-comics.png" alt="buy comics icon"><span>digital comics</span></a></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-merchandise.png" alt="buy merchandise icon"><span>digital comics</span></a></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-subscriptions.png" alt="buy subscriptions icon"><span>digital comics</span></a></li>
-                    <li><a href=""><img src="../assets/img/buy-comics-shop-locator.png" alt="shop-locator icon"><span>digital comics</span></a></li>
-                    <li><a href=""><img src="../assets/img/buy-dc-power-visa.svg" alt="power-visa icon"><span>digital comics</span></a></li>
+                    <li v-for="(link, index) in links" :key="index"><a href=""><img :src="link.src" :alt="link.alt"><span>{{link.text}}</span></a></li>
+                  
                 </ul>
             </div>
         </div>
@@ -16,40 +13,21 @@
                     <div class="comics-shop">
                         <ul>
                             <li class="white">Dc comics</li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>
+                            <li v-for="(dcComic,index) in dcComics.text" :key="index"><a href="dcComic.link">{{dcComic}}</a></li>
                         </ul>
 
                         <ul>
                             <li class="white">shop</li>
-                            <li><a href="">links</a></li>
-                            <li><a href="">links</a></li>  
+                            <li  v-for="(shop,index) in shops.text" :key="index"><a href="">{{shop}}</a></li>
                         </ul>
                     </div>
                     <ul>
-                        <li class="white">Dc comics</li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
+                        <li class="white">DC</li>
+                         <li  v-for="(dc,index) in dcs.text" :key="index"><a href="">{{dc}}</a></li>
                     </ul>
                     <ul>
-                        <li class="white">Dc comics</li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
-                        <li><a href="">links</a></li>
+                        <li class="white">Sites</li>
+                         <li  v-for="(site,index) in sites.text" :key="index"><a href="">{{site}}</a></li>
                     </ul>
 
                 
@@ -64,11 +42,7 @@
                     <div class="links-icons">
                         <span>follow us</span>
                         <ul>
-                            <li><a href="https://www.facebook.com/dc/"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
-                            <li><a href="https://twitter.com/dccomics"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
-                            <li><a href="https://www.pinterest.co.uk/dccomics/"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
-                            <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                            <li v-for="(icon, index) in icons" :key="index"><a :href="icon.href"><img :src="icon.srcIcona" alt="icon.alt"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +53,89 @@
 
 <script>
 export default {
+data(){
+    return{
+        links:[
+            {
+                src:require("../assets/img/buy-comics-digital-comics.png"),
+                alt:"buy comics icon",
+                text:'digital comics'
+            },
+            { 
+                src:require("../assets/img/buy-comics-merchandise.png"),
+                alt:"buy comics icon",
+                text:'digital comics'
+            },
+            {
+                src:require("../assets/img/buy-comics-subscriptions.png"),
+                alt:"buy comics icon",
+                text:'digital comics'
+            },
+            {
+                src:require("../assets/img/buy-comics-shop-locator.png"),
+                alt:"buy comics icon",
+                text:'digital comics'
+            },
+            {
+                src:require("../assets/img/buy-dc-power-visa.svg"),
+                alt:"buy comics icon",
+                text:'digital comics'
+            }
+        ],
+        icons:[
+            {   srcIcona:require("../assets/img/footer-facebook.png"),
+                href:"https://www.facebook.com/dc/",
+                alt:'Icona social'
+              
+            },
+            {
+                srcIcona:require("../assets/img/footer-twitter.png"),
+                href:"https://twitter.com/dccomics",
+                alt:'Icona social'
 
+            },
+            {
+                srcIcona:require("../assets/img/footer-youtube.png"),
+                href:"https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
+                alt:'Icona social'
+
+            },
+            {
+                srcIcona:require("../assets/img/footer-pinterest.png"),
+                href:"https://www.pinterest.co.uk/dccomics/",
+                alt:'Icona social'
+                
+            },
+            {
+                srcIcona:require("../assets/img/footer-periscope.png"),
+                href:"https://www.twitter.com/dc/",
+                alt:'Icona social'
+            }
+        ],
+        dcComics:
+            {
+            text:["Characters","Comics","Movies","TV","Games","Videos","News"],
+            link:'#'
+            }
+            ,
+        shops:
+            {
+                text:["Shop DC","Shop DC Collectibles"],
+            link:'#'}
+        ,
+        dcs:
+            {
+                text:["Terms of use","Privicy policy(New)","Ad Choises","Advertising","Jobs","Subscriptions","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
+                link:'#'
+            },
+        sites:
+            {text:["DC","MAD Magazine","DC kids","DC Universe","DC Power Visa"],
+             link:'#'
+            }
+        
+
+    }
+}
 }
 </script>
 
@@ -139,11 +195,12 @@ export default {
           .links{
               display: flex;
               justify-content: space-between;
-              width: 30%;
+              width: 40%;
               height: 100%;
              ul{
+                 margin: 0px 10px;
                   li{
-                      padding:5px;
+                      padding:1px;
                       a{
                           color: rgba(255, 255, 255);
                           opacity: 0.6;
