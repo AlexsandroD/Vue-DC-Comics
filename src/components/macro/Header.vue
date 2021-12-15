@@ -4,16 +4,7 @@
       <div class="logo"><img src="../../assets/img/dc-logo.png" alt="Logo Dc"></div>
       <div class="nav">
           <ul>
-              <li><a href="">characters</a></li>
-              <li><a href="">comics</a></li>
-              <li><a href="">movies</a></li>
-              <li><a href="">tv</a></li>
-              <li class="active"><a href="">games</a></li>
-              <li><a href="">collectibles</a></li>
-              <li><a href="">videos</a></li>
-              <li><a href="">fans</a></li>
-              <li><a href="">news</a></li>
-              <li><a href="">shop</a></li>
+              <li v-for="(nav,index) in navs" :key="index"><a :href="nav.href">{{nav.navLi}}</a></li>
           </ul>
       </div>
       </div>
@@ -22,7 +13,63 @@
 
 <script>
 export default {
-name:"Header"
+name:"Header",
+data(){
+  return{
+      navs:[
+          {
+              navLi:'characters',
+              href:'#footer',
+              state:false
+          },
+          {
+              navLi:'comics',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'movies',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'tv',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'games',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'collectibles',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'videos',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'fans',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'news',
+              href:'#',
+              state:false
+          },
+          {
+              navLi:'shop',
+              href:'#',
+              state:false
+          },
+      ]
+  }
+}
 }
 </script>
 
