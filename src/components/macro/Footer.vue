@@ -33,7 +33,7 @@
                 
                    
                 </div>
-                <div class="dc-logo-big"><img src="../assets/img/dc-logo-bg.png" alt="dc-logo-big"></div>
+                <div class="dc-logo-big"><img src="../../assets/img/dc-logo-bg.png" alt="dc-logo-big"></div>
         </div>
       
             <div class="footer-bottom">
@@ -57,57 +57,57 @@ data(){
     return{
         links:[
             {
-                src:require("../assets/img/buy-comics-digital-comics.png"),
+                src:require("../../assets/img/buy-comics-digital-comics.png"),
                 alt:"buy comics icon",
                 text:'digital comics'
             },
             { 
-                src:require("../assets/img/buy-comics-merchandise.png"),
+                src:require("../../assets/img/buy-comics-merchandise.png"),
                 alt:"buy comics icon",
                 text:'digital comics'
             },
             {
-                src:require("../assets/img/buy-comics-subscriptions.png"),
+                src:require("../../assets/img/buy-comics-subscriptions.png"),
                 alt:"buy comics icon",
                 text:'digital comics'
             },
             {
-                src:require("../assets/img/buy-comics-shop-locator.png"),
+                src:require("../../assets/img/buy-comics-shop-locator.png"),
                 alt:"buy comics icon",
                 text:'digital comics'
             },
             {
-                src:require("../assets/img/buy-dc-power-visa.svg"),
+                src:require("../../assets/img/buy-dc-power-visa.svg"),
                 alt:"buy comics icon",
                 text:'digital comics'
             }
         ],
         icons:[
-            {   srcIcona:require("../assets/img/footer-facebook.png"),
+            {   srcIcona:require("../../assets/img/footer-facebook.png"),
                 href:"https://www.facebook.com/dc/",
                 alt:'Icona social'
               
             },
             {
-                srcIcona:require("../assets/img/footer-twitter.png"),
+                srcIcona:require("../../assets/img/footer-twitter.png"),
                 href:"https://twitter.com/dccomics",
                 alt:'Icona social'
 
             },
             {
-                srcIcona:require("../assets/img/footer-youtube.png"),
+                srcIcona:require("../../assets/img/footer-youtube.png"),
                 href:"https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
                 alt:'Icona social'
 
             },
             {
-                srcIcona:require("../assets/img/footer-pinterest.png"),
+                srcIcona:require("../../assets/img/footer-pinterest.png"),
                 href:"https://www.pinterest.co.uk/dccomics/",
                 alt:'Icona social'
                 
             },
             {
-                srcIcona:require("../assets/img/footer-periscope.png"),
+                srcIcona:require("../../assets/img/footer-periscope.png"),
                 href:"https://www.twitter.com/dc/",
                 alt:'Icona social'
             }
@@ -140,14 +140,14 @@ data(){
 </script>
 
 <style scoped lang="scss">
-@import '../assets/styles/presets.scss';
+@import '../../assets/styles/presets.scss';
     footer{
       display: flex;
       overflow: hidden;
       flex-direction: column;
       height: 600px;
       width: 100%;
-      background-image: url('../assets/img/footer-bg.jpg');
+      background-image: url('../../assets/img/footer-bg.jpg');
       background-size: cover;
 
       .footer-top{

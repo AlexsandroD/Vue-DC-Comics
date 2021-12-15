@@ -1,7 +1,7 @@
 <template>
   <header>
       <div class="container">
-      <div class="logo"><img src="../assets/img/dc-logo.png" alt="Logo Dc"></div>
+      <div class="logo"><img src="../../assets/img/dc-logo.png" alt="Logo Dc"></div>
       <div class="nav">
           <ul>
               <li><a href="">characters</a></li>
@@ -27,7 +27,7 @@ name:"Header"
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/presets.scss";
+@import "../../assets/styles/presets.scss";
     header{
         height: 100px;
 

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Jumbo from"./partials/Jumbo.vue"
+import Jumbo from"../partials/Jumbo.vue"
 export default {
 name:'Main',
 components:{
@@ -103,7 +103,7 @@ data(){
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/presets.scss";
+@import "../../assets/styles/presets.scss";
 main{
    
     background-color: black;
