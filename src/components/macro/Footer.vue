@@ -121,7 +121,8 @@ data(){
         shops:
             {
                 text:["Shop DC","Shop DC Collectibles"],
-            link:'#'}
+            link:'#'
+            }
         ,
         dcs:
             {
@@ -145,7 +146,7 @@ data(){
       display: flex;
       overflow: hidden;
       flex-direction: column;
-      height: 600px;
+      height: 37.5rem;
       width: 100%;
       background-image: url('../../assets/img/footer-bg.jpg');
       background-size: cover;
@@ -153,19 +154,19 @@ data(){
       .footer-top{
           position: relative;
           background-color: $main-color ;
-          height: 100px;
+          height: 6.25rem;
           ul{
               width: 100%;
               height: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: 20px;
+              padding: 1.25rem;
               
               li{
                   display: flex;
                   align-items: center;
-                  padding: 10px 15px;
+                  padding: 0.625rem 0.9375rem;
                       &:hover{
                           transform: scale(1.1);
                           transition: 0.2s;
@@ -174,8 +175,8 @@ data(){
                       display: flex;
                       align-items: center;
                       img{
-                          width: 40px;
-                          margin: 0px 5px;
+                          width: 2.5rem;
+                          margin: 0rem 0.3125rem;
                       }
                   }
                   span{
@@ -198,14 +199,14 @@ data(){
               width: 40%;
               height: 100%;
              ul{
-                 margin: 0px 10px;
+                 margin: 0rem 0.625rem;
                   li{
-                      padding:1px;
+                      padding:0.0625rem;
                       a{
                           color: rgba(255, 255, 255);
                           opacity: 0.6;
                           font-weight: lighter;
-                          font-size: 12px;
+                          font-size: 0.75rem;
                           &:hover{
                               opacity: 1;
                           }
@@ -230,7 +231,7 @@ data(){
       .footer-bottom{
           display: flex;
           position: relative;
-          height: 100px;
+          height: 6.25rem;
           background-color: #303030;
           z-index: 2;
           .container{
@@ -238,17 +239,17 @@ data(){
               justify-content: space-between;
               align-items: center;
               .btn{
-                  outline: 2px solid $main-color;
-                  padding:9px 0;
+                  outline: 0.125rem solid $main-color;
+                  padding:0.5625rem 0;
                       &:hover{
-                          outline-offset: 5px;
+                          outline-offset: 0.3125rem;
                       &:active{
                           transform: scale(0.98);
                       }
                       }
                   a{
                       color:white;
-                      padding:20px;
+                      padding:1.25rem;
                       text-transform: uppercase;
                   }
               }
@@ -259,12 +260,12 @@ data(){
                       color: $main-color;
                       text-transform: uppercase;
                       font-weight: bold;
-                      padding: 5px;
+                      padding: 0.3125rem;
                   }
                   ul{
                       display: flex;
                       li{
-                          padding:10px;
+                          padding:0.625rem;
                           &:hover{
                               opacity: 0.7;
                           }
